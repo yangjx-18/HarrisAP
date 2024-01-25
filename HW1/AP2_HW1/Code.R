@@ -124,7 +124,7 @@ summary(model_top5_excluded)
 
 
 reverse_filtered <- apdata %>%
-  filter(countryname %in% countries_with_missing_data$countryname)
+  filter(countryname %in% countries_with_missing_gdp$countryname)
 
 reverse_filtered <- reverse_filtered %>% 
   group_by(countryname) %>% 
